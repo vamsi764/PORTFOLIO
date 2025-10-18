@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9f9f9; /* light gray background for a clean look */
+  color: #333;
+}
+
+section {
+  min-height: auto;
+  padding: 25px 10px; /* top padding to account for sticky navbar */
+  box-sizing: border-box;
+}

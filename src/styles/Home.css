@@ -1,0 +1,138 @@
+.home-section {
+  width: 100%;
+  min-height: 100vh; /* full viewport height for landing page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff; /* clean white background */
+  color: #333;
+  padding: 80px 10%;
+  box-sizing: border-box;
+}
+
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+/* Left - Profile Image */
+.home-left {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 4px solid #007bff; /* subtle blue accent */
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Right - Summary */
+.home-right {
+  flex: 2;
+  max-width: 650px;
+}
+
+.home-right h1 {
+  font-size: 2.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home-right h1 span {
+  color: #007bff;
+}
+
+.home-right h2 {
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.home-right p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.8rem;
+}
+
+/* Buttons */
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Contact Info */
+.contact-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .home-right {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .home-right h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .home-right p {
+    font-size: 1rem;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+}
